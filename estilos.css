@@ -1,0 +1,157 @@
+html {
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+header {
+    width: 100vw;
+    height: 10vh;
+    background-color: rgb(230, 214, 214);
+}
+header ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+header ul li {
+    font-size: 2em;
+    margin-top:15px;
+}
+/* Espacio del header terminado */
+/* ----- main */
+
+.main-quiensomos {
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+}
+
+.quiensomos-img { 
+    display: flex;
+    position: absolute;
+    width: inherit;
+    height: inherit;
+}
+
+.quiensomos-img img {
+    width: 50%;
+    height: 100%; 
+}
+
+.quiensomos-text {
+    color: black;
+    background-color: red;
+    font: 2em sans-serif;
+    align-self: flex-end;
+    justify-self:right;
+    flex-direction: row-reverse;
+    width: 50%;
+    transform: translate(100%);
+    /* width: 50%; */
+}
+
+.quiensomos-logo {
+    width: 45%;
+    min-width: 350px;
+    height: 220px;
+    position: absolute;
+    align-self: flex-end;
+    transform: translate(40px,px);
+}
+
+.quiensomos-logo img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.main-container {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+
+    /* height: 80vh; */ /* esto bloquea el crecimiento */
+    background-color: rgb(211, 196, 196);
+}
+
+.main-box {
+    width: 100%;
+    background-color: rgb(238, 225, 225);
+    margin-top: 30px;
+    /* margin-left: 10%; */
+    margin-right: 50%;
+}
+.main-title {
+    text-align: center;
+    margin: 15px;
+    position: relative;
+}
+
+.main-title:before { 
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    border-top: 2px solid black;
+    background: black;
+    width: 100%;
+    transform: translateY(-50%);
+}
+
+.link {
+    width: 150px;
+    height: 60px;
+    background: white;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+.link h1 {
+    font-size: 2em;
+}
+.main-box .mainbox-content {
+    font-size: 2em;
+    color: black;
+    /* position: relative; */
+    display: inline-block;
+    padding-top: 40px;
+
+}
+
+.main-box .mainbox-header {
+    background-color: #D0F4DE;
+    width: 300px;
+    height: 50px;
+    position: absolute;
+    right: 50%;
+    transform: translate(50%,-50%);
+    border-radius: 15px;
+}
+
+.mainbox-header span {
+    color: #000;
+    font-size: 2em;
+}
+
+.main-box figure {
+    width: 100%;
+    height: 250px;
+}
+
+.main-box figure img {
+    width: 90%;
+    padding-left: 10%;
+    height: 100%;
+}
+
+footer {
+    
+}
